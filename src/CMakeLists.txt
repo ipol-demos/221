@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 2.6)
 
+project(bspline)
+
 # FindGSL.cmake not present before CMake 3.2, use provided one if necessary
 if(CMAKE_VERSION VERSION_LESS "3.2")
   list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/CMake")
