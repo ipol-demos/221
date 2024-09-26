@@ -8,6 +8,7 @@ WORKDIR $bin
 COPY . .
 
 
+RUN apt-get update && apt-get install -y libgsl-dev
 WORKDIR $bin/src
 RUN cmake CMakeLists.txt
 RUN make
